@@ -1,27 +1,24 @@
 fileFormatVersion: 2
-guid: 5b9cf154823f6440b9c40d54c5d1bdad
+guid: f716f7502ddb743ef982e4d223876d5c
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: Toko_Die_0
+    second: Toko_Jump_0
   - first:
       213: 21300002
-    second: Toko_Die_1
+    second: Toko_Jump_1
   - first:
       213: 21300004
-    second: Toko_Die_2
+    second: Toko_Jump_2
   - first:
       213: 21300006
-    second: Toko_Die_3
+    second: Toko_Jump_3
   - first:
       213: 21300008
-    second: Toko_Die_4
-  - first:
-      213: 21300010
-    second: Toko_Die_5
+    second: Toko_Jump_4
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -81,6 +78,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -106,11 +104,35 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Toko_Die_0
+      name: Toko_Jump_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +146,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2040843590994415d9a9a1ee3dbefb82
+      spriteID: b14bf6f79b84c4b7792bf868658ccd5c
       internalID: 21300000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Toko_Die_1
+      name: Toko_Jump_1
       rect:
         serializedVersion: 2
         x: 64
@@ -145,14 +167,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40b571fb705d346b7a2ec38416306f77
+      spriteID: 846b6e9a5daaf4669a4c6dbd75c2c007
       internalID: 21300002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Toko_Die_2
+      name: Toko_Jump_2
       rect:
         serializedVersion: 2
         x: 128
@@ -166,14 +188,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b69121eb23ba43ca9b02c84350ffad8
+      spriteID: 5a0e7f34dad5e4c8a8ec13ca113b428e
       internalID: 21300004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Toko_Die_3
+      name: Toko_Jump_3
       rect:
         serializedVersion: 2
         x: 192
@@ -187,14 +209,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e27b037a242d4d2d94a40ba5ecc414a
+      spriteID: 6ba86f03453b6432d9cfcab00879df32
       internalID: 21300006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Toko_Die_4
+      name: Toko_Jump_4
       rect:
         serializedVersion: 2
         x: 256
@@ -208,29 +230,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1ff38ccdaedd4d8d8208770dc1f8cd8
+      spriteID: c1b8788a023de499db08e6562e001c55
       internalID: 21300008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Toko_Die_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faa1b093b26274215bbcd274e9db3e7b
-      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -238,7 +239,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 45af9cab5afe54bcd980a903cb8485c3
+    spriteID: 21f8cbac6bd4d46aebe7e27d2d0b0272
     internalID: 0
     vertices: []
     indices: 
@@ -246,12 +247,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Toko_Die_2: 21300004
-      Toko_Die_3: 21300006
-      Toko_Die_1: 21300002
-      Toko_Die_4: 21300008
-      Toko_Die_0: 21300000
-      Toko_Die_5: 21300010
+      Toko_Jump_0: 21300000
+      Toko_Jump_1: 21300002
+      Toko_Jump_2: 21300004
+      Toko_Jump_3: 21300006
+      Toko_Jump_4: 21300008
   spritePackingTag: Toko
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
