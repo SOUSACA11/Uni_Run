@@ -1,13 +1,23 @@
 using UnityEngine;
 
+//내부 검색은 GetComponent
+//외부 검색은 Resources.Load
+
+//빌드는 사용된 데이터만 가지고만 됨 그래서 유실되어 빌드 될 수도 있음
+//외부 프로젝트를 가지고 빌드를 하고자 할때 
+
 public class PlayerController : MonoBehaviour
 {
     public AudioClip deathclip; //사망 시 재생할 오디오 클립
+    //private AudioClip deathclip = Resources.Load
+    //Reesources 파일을 만들어 그안에 쓸 파일 넣어놓기 or 스크리밍 에셋 방법 사용 , 굳이 권장하지 않아요
+    //이럴 경우 실행시 데이터 적재되기때문에 최적화 생각하기 
+
     public float jumpForce = 700f; //점프 힘
     private int jumpCount = 0; //누적 점프 횟수
     private bool isGrounded = false; //바닥에 닿았는지 나타냄
     private bool isDead = false; //사망 상태
-    //private AudioClip deathclip = audio
+    
 
     private Rigidbody2D playerRigidbody; //사용할 리지드바디 컴포넌트
     private Animator animator; // 사용할 애니메이터 컴포넌트
