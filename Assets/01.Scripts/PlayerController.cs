@@ -66,6 +66,13 @@ public class PlayerController : MonoBehaviour
 
         playerRigidbody.velocity = Vector2.zero; //속도를 제로(0,0)으로 변경
         isDead = true; //사망 상태를 true로 변경
+
+        GameManager.instance.OnplayerDead(); //게임매니저의 게임오버 처리 실행
+       //GameManage(클래스, 소속되어 있는 곳)에 instance(변수, 나 자신 게임매니저를 의미)의 OnplayerDead(메서드, 기능)수행
+
+       // FindObjectOfType<GameManager>().OnplayerDead(); - 싱글톤 아닐시 1번 방법
+       // GameManager = FindObjectOfType<GameManager>() - 싱글톤 아닐시 2번 방법
+       // GameManager.:OnplayerDead();
     }
 
     private void OnTriggerEnter2D(Collider2D other) //트리거 콜라이더를 가진 장애물과의 충돌 감지
