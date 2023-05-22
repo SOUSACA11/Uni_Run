@@ -8,6 +8,8 @@ public class ScrollingObject : MonoBehaviour //게임 오브젝트를 계속 왼쪽으로 움�
 
     {
         if (!GameManager.instance.isGameover) //게임오버가 아니라면
+                                              //isGameover = false (defalt 값)
+                                              //!isgameover = true
         {
           transform.Translate(Vector3.left * speed * Time.deltaTime); //초당 speed의 속도로 왼쪽으로 평행이동
         }

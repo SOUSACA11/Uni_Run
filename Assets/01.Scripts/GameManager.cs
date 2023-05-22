@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         }
    
     }
-    private void Update() //게임오버 상태에서 게임을 재시작 할 수 있개 하는 처리s
+    private void Update() //게임오버 상태에서 게임을 재시작 할 수 있개 하는 처리
     {
         if (isGameover && Input.GetMouseButtonDown(0)) //게임오버 상태에서 마우스 왼쪽 버튼을 클릭하면 현재 씬 재시작
         {

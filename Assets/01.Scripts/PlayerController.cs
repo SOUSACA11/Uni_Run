@@ -69,9 +69,11 @@ public class PlayerController : MonoBehaviour
 
         GameManager.instance.OnplayerDead(); //게임매니저의 게임오버 처리 실행
        //GameManage(클래스, 소속되어 있는 곳)에 instance(변수, 나 자신 게임매니저를 의미)의 OnplayerDead(메서드, 기능)수행
+       // static 으로 명시하면 단일이므로 클래스에 소속
+       // static 으로 명시하지않으면 객체에 소속
 
-       // FindObjectOfType<GameManager>().OnplayerDead(); - 싱글톤 아닐시 1번 방법
-       // GameManager = FindObjectOfType<GameManager>() - 싱글톤 아닐시 2번 방법
+       // FindObjectOfType<GameManager>().OnplayerDead(); - 싱글톤 아닐시 첫번째 방법
+       // GameManager = FindObjectOfType<GameManager>() - 싱글톤 아닐시 두번째 방법
        // GameManager.:OnplayerDead();
     }
 
