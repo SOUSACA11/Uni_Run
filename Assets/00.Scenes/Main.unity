@@ -1414,7 +1414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1806894955
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1592,7 +1592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4192160746247988836, guid: f9fc9d007ca214ed9ad2949a47f59fb5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4192160746247988836, guid: f9fc9d007ca214ed9ad2949a47f59fb5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1636,21 +1636,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9fc9d007ca214ed9ad2949a47f59fb5, type: 3}
---- !u!1 &4798559604365257472 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8078247519246192816, guid: f9fc9d007ca214ed9ad2949a47f59fb5, type: 3}
-  m_PrefabInstance: {fileID: 4798559604365257471}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4798559604365257473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4798559604365257472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fce207577b2db4b895657898865523, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstacles: []

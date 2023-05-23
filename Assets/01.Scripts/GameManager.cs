@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText; //점수를 출력할 UI 텍스트
     public GameObject gameoverUI; //게임오버 시 활성화할 UI 게임 오브젝트
 
-    //SetActive (메서드, 값 설정) : 게임 오브젝트 활성화비활성화
-    //enabled (변수, 대입연산) : 컴포넌트 활성화비활성화
+    //SetActive (메서드, 값 설정) : 게임 오브젝트 활성화비활성화 - 아래 컴포넌트도 자동 활성화비활성화
+    //Enabled (변수, 대입연산) : 컴포넌트(부품) 활성화비활성화
 
     private int score = 0; //게임 점수
 
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     {
         if (!isGameover) //게임오버가 아니라면
         {
-            score += newScore; //점수를 증가
+            score += newScore; //점수를 증가, score = score + newScore; 
             scoreText.text = "Score :" + score;
         }
     }
