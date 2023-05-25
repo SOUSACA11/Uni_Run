@@ -49,7 +49,7 @@ public class PlatformSpawner : MonoBehaviour //발판을 생성하고 주기적으로 재배치
         if (Time.time >= lastSpawnTime + timeBetSpqwn) 
             //마지막 배치 시점에서 timeBetSpawn 이상 시간이 흘렀다면
             //게임이 시작되자마자 발동
-           //Time.time - 0.00166초 시작, 게임이 실행되고 현재까지 얼마만큼의 시간이 지났나
+           //Time.time - (현재시점) 0.00166초 시작, 게임이 실행되고 현재까지 얼마만큼의 시간이 지났나
            //Time.time - 프레임이 시작한 순간부터의 시간 (프레임 스타트 ~ )
            //Time.deltaTime - 프레임이 시작하고 끝나는 시간 (프레임 스타트 ~ 프레임 종료) / 1초당 프레임 규격화 위해 
 
